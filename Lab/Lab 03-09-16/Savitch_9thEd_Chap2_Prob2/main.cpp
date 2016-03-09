@@ -21,7 +21,7 @@ using namespace std;
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declare variables
-    float n, r , guess;
+    float n, r, guess;
     
     //Initialize variables
     
