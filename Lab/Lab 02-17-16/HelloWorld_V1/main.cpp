@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Jericho Lingo
- * Created on February 17, 2016, 9:45 AM
- * Purpose: Our first program
+ * Created on March 14, 2016, 8:15 AM
+ * Purpose: 
  */
 
 //System Libraries
@@ -33,7 +33,6 @@ int main(int argc, char** argv) {
     
     
     //Output the results
-    cout<<"Hello World"<<endl;
     
     
     //Exit Stage Right!
