@@ -55,7 +55,7 @@ int main(int argc, char** argv) {
         cout << "Your horoscope sign is Scorpio." << endl;
     if ((month == 11 && (date >= 22 && date <= 30)) || (month == 12 && (date >= 1 && date <= 21)))
         cout << "Your horoscope sign is Sagittarius." << endl;
-    if ((month == 12 && (date >= 22 && date <= 31)) || (month == 2 && (date >= 1 && date <= 19)))
+    if ((month == 12 && (date >= 22 && date <= 31)) || (month == 1 && (date >= 1 && date <= 19)))
         cout << "Your horoscope sign is Capricorn." << endl;
     
     //Exit Stage Right!
