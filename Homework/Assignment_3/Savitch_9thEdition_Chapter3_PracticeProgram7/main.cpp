@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on March 27, 2016, 11:30 PM
- * Purpose: Practice Program #6
+ * Purpose: Practice Program #7
  */
 
 //System Libraries
