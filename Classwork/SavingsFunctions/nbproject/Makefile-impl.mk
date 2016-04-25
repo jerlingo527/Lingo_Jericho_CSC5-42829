@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Ruleof72_while
+PROJECTNAME=SavingsFunctions
 
 # Active Configuration
 DEFAULTCONF=Debug
