@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on March 28, 2016, 8:10 AM
- * Purpose: To illustrate rule of 72 by way of a while loop
+ * Purpose: To illustrate the future value by utilizing functions
  */
 
 //System Libraries
