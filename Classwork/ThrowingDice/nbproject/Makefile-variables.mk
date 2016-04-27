@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=savingsfunctions
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/savingsfunctions
+CND_ARTIFACT_NAME_Debug=throwingdice
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/throwingdice
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=savingsfunctions.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/savingsfunctions.tar
+CND_PACKAGE_NAME_Debug=throwingdice.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/throwingdice.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=savingsfunctions
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/savingsfunctions
+CND_ARTIFACT_NAME_Release=throwingdice
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/throwingdice
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=savingsfunctions.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/savingsfunctions.tar
+CND_PACKAGE_NAME_Release=throwingdice.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/throwingdice.tar
 #
 # include compiler specific variables
 #

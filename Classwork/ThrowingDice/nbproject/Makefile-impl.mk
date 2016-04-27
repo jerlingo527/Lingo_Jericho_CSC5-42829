@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=SavingsFunctions
+PROJECTNAME=ThrowingDice
 
 # Active Configuration
 DEFAULTCONF=Debug
