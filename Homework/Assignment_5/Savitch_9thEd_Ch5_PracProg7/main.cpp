@@ -22,7 +22,7 @@ void get_input(float side_a, float side_b, float side_c);
 //Precondition: User enters correct values.
 //Postcondition: The length of sides a, b, and c of a triangle
 //are assigned to variables side_a, side_b, and side_c
-bool check_triangle(float side_a, float side_b, float side_c);
+bool check_triangle(float& side_a, float& side_b, float& side_c);
 //Precondition: Side lengths a, b, and c are positive nonzero numbers.
 //Postcondition: If the side lengths a, b, c can correctly form a triangle
 //a function to calculate the semipeerimieter, perimeter, and area will be called.

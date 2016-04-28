@@ -18,21 +18,19 @@ using namespace std;
 
 
 //Function Prototypes
-float W(float V, float T);
-float V(float V);
-float T(float T);
+void wind(float& w, float& spd, float& t);
 
 //Execution Begins Here!
 
 int main(int argc, char** argv) {
     //Declare Variables
     float W;
-    float V;
+    float spd;
     float T;
     char response;
 
     cout << "Enter the wind speed in meters per second :\n";
-    cin >> V;
+    cin >> spd;
 
 
     cout << "Enter the temperature in Degree Celcius:\n";
@@ -57,7 +55,6 @@ int main(int argc, char** argv) {
 
 }
 
-float W(float V, float T) {
-    W = (13.12 + 0.6215 * T - 11.37 * V(0.16) + 0.3965 * T * V(0.016));
-    return (1);
+void wind(float& W, float& spd, float& T) {
+    W = (13.12 + 0.6215 * T - 11.37 * pow(spd,(0.16)) + 0.3965 * T * pow(spd,(0.16)));
 }

@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     int total_amount;
     char yes = 'y';
     char Yes = 'Y';
-    char agian;
+    char again;
 
     cout << " Coin counting program.\n";
     cout << " \n";
@@ -113,9 +113,9 @@ int main(int argc, char** argv) {
 
         cout << "\n";
         cout << " Would you like to run the program agian (Y or N)? ";
-        cin >> agian;
+        cin >> again;
 
-    } while (agian == yes || agian == Yes);
+    } while (again == yes || again == Yes);
 
     cout << "\n\nEnd Program.\n";
     return 0;
