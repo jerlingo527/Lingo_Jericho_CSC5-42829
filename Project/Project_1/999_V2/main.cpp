@@ -2,11 +2,12 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on April 29, 2016, 10:00 PM
- * Purpose: 999 Project V1 (Bare bones with simple statements)
+ * Purpose: 999 Project V2 (Utilizing 7 different constructs)
  */
 
 //System Libraries
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 //Function Prototypes
@@ -15,6 +16,14 @@ using namespace std;
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Intro
+    cout << setfill('-')<<setw(17)<<"-"<<endl;
+    cout << " 999   999   999 " << endl;
+    cout << "9   9 9   9 9   9 " << endl;
+    cout << "9   9 9   9 9   9 " << endl;
+    cout << " 999   999   999 " << endl;
+    cout << "   9     9     9 " << endl;
+    cout << " 99    99    99  " << endl;
+    cout << setfill('-')<<setw(17)<<"-"<<endl;
     cout << "Welcome to 9 Hours, 9 Persons, 9 Doors!" << endl;
     cout << "This is a VN (Visual Novel) based on the popular DS game, '9 Hours, 9 Persons, 9 Doors'." << endl;
     cout << "This version of 999 (abbreviated for simplicity's sake) is a spoiler-free and cut-down version of the game." << endl;
@@ -89,8 +98,8 @@ int main(int argc, char** argv) {
                 //Set variable for player choice
                 int choice2;
 
-                //Prompt player for choice with a do-while loop.
-                for(choice2=0;choice2<9;choice2++){
+                //Prompt player for choice with a for loop.
+                do{
 
                     //Give choices for player
                     cout << endl;
@@ -123,7 +132,7 @@ int main(int argc, char** argv) {
                         cout << "Type 1 to read. Otherwise, input any other key to leave it." << endl;
                         cout << endl;
 
-                        //Assign choice3 for another if-else statement
+                        //Assign choice3 for if-else statement
                         int choice3;
                         
                         //Prompt player for choice
@@ -149,16 +158,21 @@ int main(int argc, char** argv) {
                             cout << "The room begins to flood with water." << endl;
                             cout << "You panic, but you try to stay calm at the same time." << endl;
                             cout << endl;
+                            
+                            //Give choices for player
                             cout << "Seek a way out! What do you do?" << endl;
                             cout << "Type 1 to close the rushing water." << endl;
                             cout << "Type 2 to approach the door." << endl;
                             cout << "Type any key to do nothing." << endl;
                             cout << endl;
                             
+                            //Assign choice4 for if statement
                             int choice4;
                             
+                            //Prompt player for choice
                             cin >> choice4;
                             
+                            //Output for plugging the rushing water
                             if (choice4 == 1){
                                 cout << endl;
                                 cout << "You attempt to close the rushing water." << endl;
@@ -173,6 +187,7 @@ int main(int argc, char** argv) {
                                 return 0;
                             }
                             
+                            //Output for approaching the door
                             else if (choice4 == 2){
                                 cout << endl;
                                 cout << "You approach the door." << endl;
@@ -182,47 +197,49 @@ int main(int argc, char** argv) {
                                 cout << "What four digit code do you input?" << endl;
                                 cout << endl;
                                 
+                                //Assign code for ternary operator
                                 float code;
                                 
+                                //Prompt player for choice
                                 cin >> code;
                                 
-                                if (code == 2185){
-                                    cout << endl;
-                                    cout << "ACCEPTED" << endl;
-                                    cout << "A click can be heard from the door." << endl;
-                                    cout << "The door is now unlocked and you open the door." << endl;
-                                    cout << "You escape the room along with the rushing water behind you." << endl;
-                                    cout << "You continue to run through the hall and approach some stairs going up." << endl;
-                                    cout << "You climb the stairs in attempt to escape the rushing water." << endl;
-                                    cout << "You stop on what appears to be the second floor." << endl;
-                                    cout << "You check behind you to see if the water is still flowing." << endl;
-                                    cout << "The water stops on the brim of the last stair approaching the second floor." << endl;
-                                    cout << "You sigh in relief and lay down." << endl;
-                                    cout << endl;
-                                    cout << "YOU FOUND IT!" << endl;
-                                    cout << "Congratulations! You've completed the game!" << endl;
-                                    cout << "Once again, this was a cut-down version of the game so it's not fully complete." << endl;
-                                    cout << "I strongly encourage you to check out the full game of 999 by purchasing it for the Nintendo DS." << endl;
-                                    cout << "Thank you for playing this game!" << endl;
-                                    return 0;
-                                }
+                                //Output for correct code
+                                (code == 2185) ? 
+                                    cout << endl <<
+                                    "ACCEPTED" << endl <<
+                                    "A click can be heard from the door." << endl <<
+                                    "The door is now unlocked and you open the door." << endl <<
+                                    "You escape the room along with the rushing water behind you." << endl <<
+                                    "You continue to run through the hall and approach some stairs going up." << endl <<
+                                    "You climb the stairs in attempt to escape the rushing water." << endl <<
+                                    "You stop on what appears to be the second floor." << endl <<
+                                    "You check behind you to see if the water is still flowing." << endl <<
+                                    "The water stops on the brim of the last stair approaching the second floor." << endl <<
+                                    "You sigh in relief and lay down." << endl <<
+                                    endl <<
+                                    "YOU FOUND IT!" << endl <<
+                                    "Congratulations! You've completed the game!" << endl <<
+                                    "Once again, this was a cut-down version of the game so it's not fully complete." << endl <<
+                                    "Please check out the full game of 999 by purchasing it for the Nintendo DS." << endl <<
+                                    "Thank you for playing this game!":
+
+                                    //Output for incorrect code
+                                    cout << endl <<
+                                    "DENIED" << endl <<
+                                    "The water rushes to the keypad and shorts it out." << endl <<
+                                    "You push the numbers, but no response." << endl <<
+                                    "The water fills up the room completely." << endl <<
+                                    "You are completely submerged in the water." << endl <<
+                                    "You start to lose air and begin drowning." << endl <<
+                                    "You lose consciousness due to lack of air." << endl <<
+                                    endl <<
+                                    "GAME OVER." << endl;
                                 
-                                else {
-                                    cout << endl;
-                                    cout << "DENIED" << endl;
-                                    cout << "The water rushes to the keypad and shorts it out." << endl;
-                                    cout << "You push the numbers, but no response." << endl;
-                                    cout << "The water fills up the room completely." << endl;
-                                    cout << "You are completely submerged in the water." << endl;
-                                    cout << "You start to lose air and begin drowning." << endl;
-                                    cout << "You lose consciousness due to lack of air." << endl;
-                                    cout << endl;
-                                    cout << "GAME OVER." << endl;
-                                    return 0;
-                                }
+                                return 0;
                                 
                             }
                             
+                            //Output for doing nothing
                             else {
                                 cout << endl;
                                 cout << "You do nothing. You sit on the bed and wait for death." << endl;
@@ -270,7 +287,7 @@ int main(int argc, char** argv) {
                         cout << "Error! Invalid input. Please type the appropriate choice." << endl;
                         cout << endl;
                     }
-                }
+                }while (choice2<9);
                 break;
             }
             
