@@ -6,8 +6,12 @@
  */
 
 //System Libraries
+#include <cstdlib>
 #include <iostream>
+#include <cmath>
+#include <ctime>
 #include <iomanip>
+#include <fstream>
 using namespace std;
 
 //Function Prototypes
