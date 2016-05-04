@@ -2,7 +2,10 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on April 29, 2016, 10:00 PM
- * Purpose: 999 Project V1 (Bare bones with simple statements)
+ * Purpose: 999 Project V1
+ * 
+ * Notes:
+ * Bare bones with simple statements
  */
 
 //System Libraries

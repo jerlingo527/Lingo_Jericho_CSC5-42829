@@ -2,7 +2,10 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on April 29, 2016, 10:00 PM
- * Purpose: 999 Project V5 (Implemented void functions to refine line of code)
+ * Purpose: 999 Project V5
+ * 
+ * Changes list:
+ * Implemented void functions to organize line of code
  */
 
 //System Libraries
@@ -18,8 +21,6 @@ void path2();
 void path3();
 void path4();
 void path5();
-
-
 
 //Execution Begins Here!
 
@@ -37,6 +38,7 @@ int main(int argc, char** argv) {
         cin >> start;
 
         //Code to avoid infinite loop after a character is introduced
+        //Although there is no loop, it's still here just in case.
         cin.clear();
         cin.ignore();
 
@@ -55,7 +57,6 @@ return 0;
 }
 
 //Intro
-
 void intro() {
     //Introduce the game
     cout << setfill('-') << setw(17) << "-" << endl;
@@ -78,7 +79,6 @@ void intro() {
 }
 
 //Begin game
-
 void path1() {
     {
         //Declare choice variable
@@ -141,7 +141,6 @@ void path1() {
 }
 
 //Examine room
-
 void path2() {
     //Declare choice variable
     int choice2; //Integer for 2nd choice
@@ -201,7 +200,6 @@ void path2() {
 }
 
 //Examine drawer
-
 void path3() {
     //Declare choice variable
     int choice3; //Integer for 3rd choice
@@ -234,7 +232,6 @@ void path3() {
 }
 
 //Reading the note
-
 void path4() {
     //Declare choice variable
     int choice4; //Integer for 4th choice
@@ -325,7 +322,6 @@ void path4() {
 }
 
 //Code for keypad
-
 void path5() {
     //Assign code for ternary operator
     float code;

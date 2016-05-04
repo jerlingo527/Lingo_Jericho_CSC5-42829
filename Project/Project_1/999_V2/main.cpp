@@ -2,16 +2,16 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on April 29, 2016, 10:00 PM
- * Purpose: 999 Project V2 (Utilizing 7 different constructs)
+ * Purpose: 999 Project V2 
+ * 
+ * Changes list:
+ * Utilized 7 different constructs such as if, if-else, switch, ternary, while, do-while, and for loops
+ * Added large "999" title card to beginning of the game
  */
 
 //System Libraries
-#include <cstdlib>
 #include <iostream>
-#include <cmath>
-#include <ctime>
 #include <iomanip>
-#include <fstream>
 using namespace std;
 
 //Function Prototypes

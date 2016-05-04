@@ -2,15 +2,15 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on April 29, 2016, 10:00 PM
- * Purpose: 999 Project V4 (Changed input from "any key" to "9" and vice versa)
+ * Purpose: 999 Project V4
+ * 
+ * Changes list:
+ * Changed input from "any key" to "9" and vice versa
  */
 
 //System Libraries
 #include <iostream>
 #include <iomanip>
-#include <cstdlib> 
-#include <cmath>
-#include <ctime>
 using namespace std;
 
 //Function Prototypes

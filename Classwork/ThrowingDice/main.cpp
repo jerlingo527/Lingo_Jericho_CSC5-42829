@@ -38,28 +38,17 @@ int main(int argc, char** argv) {
         die2 = rand() % 6 + 1; //[1,6]
         sumDie = die1 + die2; //[2,12]
         switch (sumDie) {
-            case 2:freq2++;
-                break;
-            case 3:freq3++;
-                break;
-            case 4:freq4++;
-                break;
-            case 5:freq5++;
-                break;
-            case 6:freq6++;
-                break;
-            case 7:freq7++;
-                break;
-            case 8:freq8++;
-                break;
-            case 9:freq9++;
-                break;
-            case 10:freq10++;
-                break;
-            case 11:freq11++;
-                break;
-            case 12:freq12++;
-                break;
+            case 2:freq2++;break;
+            case 3:freq3++;break;
+            case 4:freq4++;break;
+            case 5:freq5++;break;
+            case 6:freq6++;break;
+            case 7:freq7++;break;
+            case 8:freq8++;break;
+            case 9:freq9++;break;
+            case 10:freq10++;break;
+            case 11:freq11++;break;
+            case 12:freq12++;break;
             default:cout << "Bad Result" << endl;
         }
     }

@@ -2,7 +2,10 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on April 29, 2016, 10:00 PM
- * Purpose: 999 Project V3 (Refinement with loops to allow characters to cause errors)
+ * Purpose: 999 Project V3
+ * 
+ * Changes list:
+ * Refined loops to allow characters to cause errors (ie. letters of alphabet causes errors)
  */
 
 //System Libraries
