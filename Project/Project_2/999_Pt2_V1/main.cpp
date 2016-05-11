@@ -2,16 +2,10 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * Created on April 29, 2016, 10:00 PM
- * Purpose: 999 Project Final Version
+ * Purpose: 999 Second Installment Version 1
+ * This is the bare bones version that will utilize arrays alongside more story.
+ * The puzzles will also be more complex as well as the choices.
  * 
- * Changes list:
- * Optimized all inputs to only allow correct inputs and output messages for any invalid inputs
- * Added "back" function from observing the room back to the main menu
- * Added dashed lines to distinguish between story-line text and input text
- * Added line of text to inform the player that 999 is also available for iOS
- * Added apostrophes to inputs to clearly identify the choices
- * Separated some story-line text so it wouldn't repeat within a certain loop
- * Changed some story-line text to avoid repeating the same line
  */
 
 //System Libraries
@@ -87,6 +81,7 @@ void intro() {
     cout << "Type '9' to continue. Otherwise, input any other key to exit." << endl << endl;
 }
 
+//Begin game
 void gamecont() {
     //Start game from last point 
     cout << setfill('-') << setw(120) << "-" << endl;
@@ -95,31 +90,48 @@ void gamecont() {
     cout << "Upon approaching the stairs, you encounter eight other people." << endl;
     cout << "'Well, that's great. Another person that's involved in this crap.' said the tall man." << endl;
     cout << "'Hey! At least show a little more respect!' said the young girl." << endl;
-    cout << "'What's your name?' said the man with glasses." << endl;
+    cout << "'All right, then. What's your name?' said the man with glasses." << endl;
     cout << "You say, 'Me? My name is...'" << endl;
     cout << setfill('-') << setw(120) << "-" << endl;
 }
 
-//Begin game
-
+//Name input
 void name() {
     {
-        //Declare choice variable
+        //Declare name variable
         string name;
 
-            //Give choices for player
+            //Prompt player for name
             cout << "What is your name?" << endl;
             cout << "Enter below." << endl;
             cout << endl;
 
-            //Assign choice1 for upcoming switch statement
+            //Assign name variable for upcoming statements
             cin >> name;
 
-            //
+            //Introduce other characters
             cout << setfill('-') << setw(120) << "-" << endl;
             cout << "'" << name <<"! The name is " << name << ".' you said." << endl;
             cout << "'" << name << ", eh? Well, it's a pleasure meeting you. My name is Tim.' said the man with glasses." << endl;
             cout << "You keep in mind that the man with glasses is named Tim." << endl;
+            cout << "'I'm Elayna. nice to meet ya!' said the young girl." << endl;
+            cout << "'The name's Rob.' said the tall man as he shakes your hand." << endl;
+            cout << "You remember that Elayna is the young girl and Rob is the tall man." << endl;
+            cout << "You see the other four people approaching you." << endl;
+            cout << "There appears to be a punk-looking man, a slightly obese man, a dandy man, and a fit woman." << endl;
+            cout << "'Xavier. Remember it.' said the punk-looking man." << endl;
+            cout << "'I'm Rick. Enjoy your time here 'cause you're gonna need it.' said the slightly obese man." << endl;
+            cout << "'Salutations. My name is Bryce.' said the dandy man." << endl;
+            cout << "'Ello! I'm Jessica. Keep your eyes at my face, alright mate?' said the fit woman. She appears to have an Australian accent." << endl;
+            cout << "The whole group stared at Jessica." << endl;
+            cout << "'Watch it, blokes! Leave me alone!' she yelled." << endl;
+            cout << "Everyone averted their gaze." << endl;
+            cout << "You remember the names carefully based on their appearance." << endl;
+            cout << setfill('-') << setw(120) << "-" << endl;
+            cout << "'Wait. There's eight of us here, but where's the last person?' you said." << endl;
+            cout << "'Hey, you're right? Wasn't there one more person?' Tim said." << endl;
+            cout << "Everyone looks around. You look in the direction opposite of them." << endl;
+            cout << "You see a person coming down the stairs." << endl;
             
             }
         }
