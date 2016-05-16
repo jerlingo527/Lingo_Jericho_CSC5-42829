@@ -18,7 +18,7 @@ using namespace std;
 
 
 //Function Prototypes
-
+void lookupName(string, string);
 
 //Execution Begins Here!
 

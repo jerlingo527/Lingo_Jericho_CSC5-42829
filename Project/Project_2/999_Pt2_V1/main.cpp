@@ -5,7 +5,7 @@
  * Purpose: 999 Second Installment Version 1
  * This is the bare bones version that will utilize arrays alongside more story.
  * The puzzles will also be more complex as well as the choices.
- * 
+ * It will also utilize the addition of a player.
  */
 
 //System Libraries
@@ -120,7 +120,7 @@ void name() {
             cout << "You see the other four people approaching you." << endl;
             cout << "There appears to be a punk-looking man, a slightly obese man, a dandy man, and a fit woman." << endl;
             cout << "'Xavier. Remember it.' said the punk-looking man." << endl;
-            cout << "'I'm Rick. Enjoy your time here 'cause you're gonna need it.' said the slightly obese man." << endl;
+            cout << "'I'm Blake. Enjoy your time here 'cause you're gonna need it.' said the slightly obese man." << endl;
             cout << "'Salutations. My name is Bryce.' said the dandy man." << endl;
             cout << "'Ello! I'm Jessica. Keep your eyes at my face, alright mate?' said the fit woman. She appears to have an Australian accent." << endl;
             cout << "The whole group stared at Jessica." << endl;
@@ -129,10 +129,13 @@ void name() {
             cout << "You remember the names carefully based on their appearance." << endl;
             cout << setfill('-') << setw(120) << "-" << endl;
             cout << "'Wait. There's eight of us here, but where's the last person?' you said." << endl;
-            cout << "'Hey, you're right? Wasn't there one more person?' Tim said." << endl;
+            cout << "'Hey, you're right! Wasn't there one more person?' Tim said." << endl;
             cout << "Everyone looks around. You look in the direction opposite of them." << endl;
             cout << "You see a person coming down the stairs." << endl;
-            
+            cout << "You easily recognize the person. It is none other than your childhood friend, Beatrice." << endl;
+            cout << "'" << name << ", is that you?' she said as she runs down the stairs." << endl;
+            cout << "'Beatrice? Oh my god, you're here too? Oh man, this is crazy!' you said." << endl;
+            cout << "'Calm down, " << name << ". If we're gonna live in hell, we might as well stick together.' she said." << endl;
             }
         }
 

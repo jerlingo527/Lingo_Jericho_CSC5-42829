@@ -18,13 +18,12 @@ using namespace std;
 
 
 //Function Prototypes
-
+void swapFrontBack();
 
 //Execution Begins Here!
 
 int main(int argc, char** argv) {
 
-    
     return 0;
 }
 

@@ -18,13 +18,12 @@ using namespace std;
 
 
 //Function Prototypes
-
+void countNum2s();
 
 //Execution Begins Here!
 
 int main(int argc, char** argv) {
 
-    
     return 0;
 }
 
