@@ -1,14 +1,15 @@
 /* 
  * File:   main.cpp
  * Author: Jericho Lingo
- * CSC 5 42829
- * Created on May 16, 2016, 9:30 AM
- * Purpose: firstLast2
+ * Created on May 18, 2016, 8:35 AM
+ * Purpose: Search a random array
  */
 
 //System Libraries
-#include <iostream>
-#include <cstring>
+#include <iostream>//I/O
+#include <cstdlib> //Rand and Set Random
+#include <ctime>    //Utilize time to set the seed
+#include <iomanip>
 using namespace std;
 
 //User Libraries
@@ -18,12 +19,56 @@ using namespace std;
 
 
 //Function Prototypes
-void swapFrontBack();
+int swapFrontBack(int [], int, int); //Linear Search
+void prntAry(int [], int, int); //Print the array with with columns
+void fillAry(int [], int); //Fill array with 2 digit random numbers
 
 //Execution Begins Here!
 
 int main(int argc, char** argv) {
+    //Set the random number seed for variability
+    srand(static_cast<unsigned int> (time(0)));
 
+    //Declare variables
+    const int SIZE = 100;
+    int array[SIZE];
+
+    //Fill the array
+    fillAry(array, SIZE);
+
+    //Print the array
+    prntAry(array, SIZE, 10);
+
+    //Test for 2 at beginning or end
+    int val = 2;
+    int pos = swapFrontBack(array, SIZE, val);
+    if (pos < 0)
+        cout << "Search did not find " << val << endl << endl;
+    else
+        cout << "Value of " << val << " found at position " << ++pos << endl << endl;
+
+    //Exit Stage Right!
     return 0;
 }
 
+int swapFrontBack(int a[], int n, int val) {
+    for (int i = 0; i < n + 1 && i > n - 99; i++) {
+        if (a[i] == val)return i; //Found at index i, position ++i
+    }
+    return -1; //Not found
+}
+
+void prntAry(int b[], int m, int perLine) {
+    for (int i = 0; i < m; i++) {
+        cout << b[i] << " ";
+        if (i % perLine == (perLine - 1))
+            cout << endl;
+    }
+    cout << endl << endl;
+}
+
+void fillAry(int a[], int n) {
+    for (int i = 0; i < n; i++) {
+        a[i] = rand() % 9 + 1; //2 digit random number
+    }
+}
