@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
 }
 
 int firstLast2(int a[], int n, int val) {
-    for (int i = 0; i < n + 1 && i > n - 99; i++) {
+    for (int i = 0; i <= 0  || i >= 98; i++) {
         if (a[i] == val)return i; //Found at index i, position ++i
     }
     return -1; //Not found

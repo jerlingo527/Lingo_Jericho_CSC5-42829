@@ -20,8 +20,8 @@ using namespace std;
 
 //Function Prototypes
 int swapFrontBack(int [], int, int); //Linear Search
-void prntAry(int [], int, int); //Print the array with with columns
-void fillAry(int [], int); //Fill array with 2 digit random numbers
+void prntAry3(int [], int, int); //Print the array with with columns
+void fillAry3(int [], int); //Fill array with 2 digit random numbers
 
 //Execution Begins Here!
 
@@ -34,10 +34,10 @@ int main(int argc, char** argv) {
     int array[SIZE];
 
     //Fill the array
-    fillAry(array, SIZE);
+    fillAry3(array, SIZE);
 
     //Print the array
-    prntAry(array, SIZE, 10);
+    prntAry3(array, SIZE, 10);
 
     //Test for 2 at beginning or end
     int val = 2;
@@ -58,7 +58,7 @@ int swapFrontBack(int a[], int n, int val) {
     return -1; //Not found
 }
 
-void prntAry(int b[], int m, int perLine) {
+void prntAry3(int b[], int m, int perLine) {
     for (int i = 0; i < m; i++) {
         cout << b[i] << " ";
         if (i % perLine == (perLine - 1))
@@ -67,7 +67,7 @@ void prntAry(int b[], int m, int perLine) {
     cout << endl << endl;
 }
 
-void fillAry(int a[], int n) {
+void fillAry3(int a[], int n) {
     for (int i = 0; i < n; i++) {
         a[i] = rand() % 9 + 1; //2 digit random number
     }
