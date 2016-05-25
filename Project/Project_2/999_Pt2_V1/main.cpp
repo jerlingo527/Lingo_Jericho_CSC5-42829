@@ -19,10 +19,7 @@ using namespace std;
 void intro();
 void gamecont();
 void name();
-void path2();
-void path3();
-void path4();
-void path5();
+void rules();
 
 //Execution Begins Here!
 
@@ -82,6 +79,7 @@ void intro() {
 }
 
 //Begin game
+
 void gamecont() {
     //Start game from last point 
     cout << setfill('-') << setw(120) << "-" << endl;
@@ -96,292 +94,125 @@ void gamecont() {
 }
 
 //Name input
+
 void name() {
     {
         //Declare name variable
         string name;
+        int choice1;
 
-            //Prompt player for name
-            cout << "What is your name?" << endl;
-            cout << "Enter below." << endl;
-            cout << endl;
+        //Prompt player for name
+        cout << "What is your name?" << endl;
+        cout << "Enter below." << endl;
+        cout << endl;
 
-            //Assign name variable for upcoming statements
-            cin >> name;
+        //Assign name variable for upcoming statements
+        cin >> name;
 
-            //Introduce other characters
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << "'" << name <<"! The name is " << name << ".' you said." << endl;
-            cout << "'" << name << ", eh? Well, it's a pleasure meeting you. My name is Tim.' said the man with glasses." << endl;
-            cout << "You keep in mind that the man with glasses is named Tim." << endl;
-            cout << "'I'm Elayna. nice to meet ya!' said the young girl." << endl;
-            cout << "'The name's Rob.' said the tall man as he shakes your hand." << endl;
-            cout << "You remember that Elayna is the young girl and Rob is the tall man." << endl;
-            cout << "You see the other four people approaching you." << endl;
-            cout << "There appears to be a punk-looking man, a slightly obese man, a dandy man, and a fit woman." << endl;
-            cout << "'Xavier. Remember it.' said the punk-looking man." << endl;
-            cout << "'I'm Blake. Enjoy your time here 'cause you're gonna need it.' said the slightly obese man." << endl;
-            cout << "'Salutations. My name is Bryce.' said the dandy man." << endl;
-            cout << "'Ello! I'm Jessica. Keep your eyes at my face, alright mate?' said the fit woman. She appears to have an Australian accent." << endl;
-            cout << "The whole group stared at Jessica." << endl;
-            cout << "'Watch it, blokes! Leave me alone!' she yelled." << endl;
-            cout << "Everyone averted their gaze." << endl;
-            cout << "You remember the names carefully based on their appearance." << endl;
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << "'Wait. There's eight of us here, but where's the last person?' you said." << endl;
-            cout << "'Hey, you're right! Wasn't there one more person?' Tim said." << endl;
-            cout << "Everyone looks around. You look in the direction opposite of them." << endl;
-            cout << "You see a person coming down the stairs." << endl;
-            cout << "You easily recognize the person. It is none other than your childhood friend, Beatrice." << endl;
-            cout << "'" << name << ", is that you?' she said as she runs down the stairs." << endl;
-            cout << "'Beatrice? Oh my god, you're here too? Oh man, this is crazy!' you said." << endl;
-            cout << "'Calm down, " << name << ". If we're gonna live in hell, we might as well stick together.' she said." << endl;
+        //Introduce other characters
+        cout << setfill('-') << setw(120) << "-" << endl;
+        cout << "'" << name << "! The name is " << name << ".' you said." << endl;
+        cout << "'" << name << ", eh? Well, it's a pleasure meeting you. My name is Tim.' said the man with glasses." << endl;
+        cout << "You keep in mind that the man with glasses is named Tim." << endl;
+        cout << "'I'm Elayna. nice to meet ya!' said the young girl." << endl;
+        cout << "'The name's Rob.' said the tall man as he shakes your hand." << endl;
+        cout << "You remember that Elayna is the young girl and Rob is the tall man." << endl;
+        cout << "You see the other four people approaching you." << endl;
+        cout << "There appears to be a punk-looking man, a slightly obese man, a dandy man, and a fit woman." << endl;
+        cout << "'Xavier. Remember it.' said the punk-looking man." << endl;
+        cout << "'I'm Blake. Enjoy your time here 'cause you're gonna need it.' said the slightly obese man." << endl;
+        cout << "'Salutations. My name is Bryce.' said the dandy man." << endl;
+        cout << "'Ello! I'm Jessica. Keep your eyes at my face, alright mate?' said the fit woman. She appears to have an Australian accent." << endl;
+        cout << "The whole group stared at Jessica." << endl;
+        cout << "'Watch it, blokes! Leave me alone!' she yelled." << endl;
+        cout << "Everyone averted their gaze." << endl;
+        cout << "You remember the names carefully based on their appearance." << endl;
+        cout << setfill('-') << setw(120) << "-" << endl;
+        cout << "'Wait. There's eight of us here, but where's the last person?' you said." << endl;
+        cout << "'Hey, you're right! Wasn't there one more person?' Tim said." << endl;
+        cout << "Everyone looks around. You look in the direction opposite of them." << endl;
+        cout << "You see a person coming down the stairs." << endl;
+        cout << "You easily recognize the person. It is none other than your childhood friend, Beatrice." << endl;
+        cout << "'" << name << ", is that you?' she said as she runs down the stairs." << endl;
+        cout << "'Beatrice? Oh my god, you're here too? Oh man, this is crazy!' you said." << endl;
+        cout << "'Calm down, " << name << ". If we're gonna live in hell, we might as well stick together.' she said." << endl;
+        cout << setfill('-') << setw(120) << "-" << endl;
+        cout << "Please type 9 to continue on with the story." << endl;
+
+        for (;;) {
+
+            //
+            cin >> choice1;
+
+            //Code to avoid infinite loop after a character is introduced
+            //Although there is no loop, it's still here just in case.
+            cin.clear();
+            cin.ignore();
+
+            if (choice1 == 9) {
+                rules();
+            } else {
+                cout << endl;
+                cout << "Error! Invalid input. Please type 9 to continue." << endl;
+                cout << endl;
             }
-        }
-
-//Examine room
-
-void path2() {
-    //Declare choice variable
-    int choice2; //Integer for 2nd choice
-
-    //Prompt player for choice with a do-while loop.
-    do {
-
-        //Give choices for player
-        cout << setfill('-') << setw(120) << "-" << endl;
-        cout << "You examine the room." << endl;
-        cout << setfill('-') << setw(120) << "-" << endl;
-        cout << "What would you like to examine?" << endl;
-        cout << "Type '1' to examine the bed." << endl;
-        cout << "Type '2' to examine the drawer." << endl;
-        cout << "Type '3' to examine the lamp." << endl;
-        cout << "Type '4' to examine the room itself." << endl;
-        cout << "Otherwise, type '5' to quit investigating the room." << endl;
-        cout << endl;
-
-        //Assign choice2 for upcoming if-else statement
-        cin >> choice2;
-
-        //Code to avoid infinite loop after a character is introduced
-        cin.clear();
-        cin.ignore();
-
-        //Output for examining the bed
-        if (choice2 == 1) {
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << "You examine the bed." << endl;
-            cout << "It looks like it hasn't been used for a while." << endl;
-            cout << "There doesn't seem to be anything of interest. You examine other objects." << endl;
-        }//Output for examining the drawer
-        else if (choice2 == 2) {
-            path3();
-        }//Output for examining the lamp
-        else if (choice2 == 3) {
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << "You examine the lamp." << endl;
-            cout << "It was turned on when you first woke up." << endl;
-            cout << "Nothing seems to be off. You examine other objects." << endl;
-        }//Output for examining the room
-        else if (choice2 == 4) {
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << "You examine the room itself." << endl;
-            cout << "The room is rather small and only accommodates for one person." << endl;
-            cout << "It feels as though it was meant for a crew member of some sort." << endl;
-            cout << "Nothing seems to catch your eye. You examine other objects." << endl;
-        }//Output for incorrect input
-        else {
-            cout << endl;
-            cout << "Error! Invalid input. Please type the appropriate choice." << endl;
-            cout << endl;
-        }
-    } while (1);
-}
-
-//Examine drawer
-
-void path3() {
-    //Declare choice variable
-    int choice3; //Integer for 3rd choice
-
-    //Examining the drawer
-    cout << setfill('-') << setw(120) << "-" << endl;
-    cout << "You examine the drawer." << endl;
-    cout << "There appears to be a note." << endl;
-    cout << setfill('-') << setw(120) << "-" << endl;
-    cout << "Read the note?" << endl;
-    cout << "Type '1' to read. Otherwise, input any other key to leave it." << endl;
-    cout << endl;
-
-    //Prompt player for choice
-    cin >> choice3;
-
-    //Code to avoid infinite loop after a character is introduced
-    //Although there is no loop, it's still here just in case.
-    cin.clear();
-    cin.ignore();
-
-    //Output for reading the note
-    if (choice3 == 1) {
-        path4();
-    }//Output for leaving the note
-    else {
-        cout << setfill('-') << setw(120) << "-" << endl;
-        cout << "You decide not to read the note." << endl;
-        cout << "With that in mind, you decide to examine other objects." << endl;
+        };
     }
 }
 
-//Reading the note
+void rules() {
 
-void path4() {
-    //Declare choice variable
-    int choice4; //Integer for 4th choice
-
-    //Reading the note
+    //
     cout << setfill('-') << setw(120) << "-" << endl;
-    cout << "You read the note." << endl;
-    cout << "The note reads:" << endl;
-    cout << endl;
-    cout << "<----" << endl;
-    cout << "'5812'." << endl;
-    cout << endl;
-    cout << "You remember the sequence of numbers just in case." << endl;
-    cout << setfill('-') << setw(120) << "-" << endl;
-    cout << "Suddenly, a loud rush of water can be heard from the outside." << endl;
-    cout << "The rushing water gets louder and louder and suddenly..." << endl;
-    cout << endl;
-    cout << "CRASH!" << endl;
-    cout << endl;
-    cout << "The water crashes through the small window." << endl;
-    cout << "The room begins to flood with water." << endl;
-    cout << "You panic, but you try to stay calm at the same time." << endl;
-    cout << setfill('-') << setw(120) << "-" << endl;
-
-    //Prompt player for choice with a while loop
-    while (1) {
-
-        //Give choices for player
-        cout << "Seek a way out! What is your next course of action?" << endl;
-        cout << "Type '1' to close the rushing water." << endl;
-        cout << "Type '2' to approach the door." << endl;
-        cout << "Type '3' to do nothing." << endl;
-        cout << endl;
-
-        //Prompt player for choice
-        cin >> choice4;
-
-        //Code to avoid infinite loop after a character is introduced
-        cin.clear();
-        cin.ignore();
-
-        //Output for plugging the rushing water
-        if (choice4 == 1) {
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << "You attempt to close the rushing water." << endl;
-            cout << "You try to use the bed as a blockade, however the bed is too heavy for you to lift." << endl;
-            cout << "You try to use your body, however the water pressure is too powerful." << endl;
-            cout << "The water fills up the room completely." << endl;
-            cout << "You are completely submerged in the water." << endl;
-            cout << "You start to lose air and begin drowning." << endl;
-            cout << "You hear a faint voice." << endl;
-            cout << "'Don't fight it, avoid it...' said the faint voice." << endl;
-            cout << "You lose consciousness due to lack of air." << endl;
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << endl;
-            cout << "GAME OVER." << endl;
-            cout << endl;
-            exit(0);
-        }
-
-        //Output for approaching the door
-        if (choice4 == 2) {
-            path5();
-        }
-
-        //Output for doing nothing
-        if (choice4 == 3) {
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << "You do nothing. You sit on the bed and wait for death." << endl;
-            cout << "The water fills up the room completely." << endl;
-            cout << "You are completely submerged in the water." << endl;
-            cout << "You start to lose air and begin drowning." << endl;
-            cout << "You hear a faint voice." << endl;
-            cout << "'Believe in yourself...' said the faint voice." << endl;
-            cout << "You lose consciousness due to lack of air." << endl;
-            cout << setfill('-') << setw(120) << "-" << endl;
-            cout << endl;
-            cout << "GAME OVER." << endl;
-            cout << endl;
-            exit(0);
-        }
-
-        if (choice4 <= 0 || choice4 >= 4) {
-            cout << endl;
-            cout << "Error! Invalid input. Please type the appropriate choice." << endl;
-            cout << endl;
-        }
-    }
-}
-
-//Code for keypad
-
-void path5() {
-    //Assign code for ternary operator
-    float code;
-
-    //Approaching the door
-    cout << setfill('-') << setw(120) << "-" << endl;
-    cout << "You approach the door." << endl;
-    cout << "The door is still locked tight." << endl;
-    cout << "You remember that there is a keypad next to the door." << endl;
-    cout << "You attempt to input a four digit code." << endl;
-    cout << setfill('-') << setw(120) << "-" << endl;
-    cout << "What four digit code do you input?" << endl;
-    cout << endl;
-
-    //Prompt player for choice
-    cin >> code;
-
-    //Code to avoid infinite loop after a character is introduced
-    //Although there is no loop and it ends regardless based on the wrong choice, it's still here just in case.
-    cin.clear();
-    cin.ignore();
-
-    //Output for correct code
-    (code == 2185) ?
-            cout << setfill('-') << setw(120) << "-" << endl <<
-            "ACCEPTED" << endl <<
-            "A click can be heard from the door." << endl <<
-            "The door is now unlocked and you open the door." << endl <<
-            "You escape the room along with the rushing water behind you." << endl <<
-            "You continue to run through the hall and approach some stairs going up." << endl <<
-            "You climb the stairs in attempt to escape the rushing water." << endl <<
-            "You stop on what appears to be the second floor." << endl <<
-            "You check behind you to see if the water is still flowing." << endl <<
-            "The water stops on the brim of the last stair approaching the second floor." << endl <<
-            "You sigh in relief and lay down." << endl <<
-            setfill('-') << setw(120) << "-" << endl << endl <<
-            "YOU FOUND IT!" << endl << endl <<
-            setfill('-') << setw(120) << "-" << endl <<
-            "Congratulations! You've completed the game!" << endl <<
-            "Once again, this was a cut-down version of the game so it's not fully complete." << endl <<
-            "Please check out the full game of 999 by purchasing it for the Nintendo DS or iOS." << endl <<
-            "Thank you for playing this game!" << endl :
-
-            //Output for incorrect code
-            cout << setfill('-') << setw(120) << "-" << endl <<
-            "DENIED" << endl <<
-            "The water rushes to the keypad and shorts it out." << endl <<
-            "You push the numbers, but no response." << endl <<
-            "The water fills up the room completely." << endl <<
-            "You are completely submerged in the water." << endl <<
-            "You start to lose air and begin drowning." << endl <<
-            "You hear a faint voice." << endl <<
-            "'Enter in reverse order...' said the faint voice." << endl <<
-            "You lose consciousness due to lack of air." << endl <<
-            setfill('-') << setw(120) << "-" <<
-            endl << endl <<
-            "GAME OVER." << endl;
-    exit(0);
+    cout << "'All right, we have everyone now. What next?' said Tim." << endl;
+    cout << "Suddenly a loud static noise emitted the entire foyer." << endl;
+    cout << "'Auugh! What's that noise!' said Elayna as she covered her ears." << endl;
+    cout << "The loud static began to clear up and a deep voice can be heard." << endl;
+    cout << "'Welcome to the Nonary Game.' said the deep voice." << endl;
+    cout << "'I have to applaud you people for escaping that first room. However, that is not what you are here for.'" << endl;
+    cout << "'Who are you and what are we doin' here, mate?' yelled Jessica." << endl;
+    cout << "'My name is Zero. The nine of you have been chosen to participate in the Nonary Game.' said the deep voice." << endl;
+    cout << "You listen to the others as they murmur." << endl;
+    cout << "'Nonary Game? What's that?' 'Where have I heard that before?' 'I don't want to die!'" << endl;
+    cout << "Zero continues 'The Nonary Game is a game in which the nine of you must escape this building." << endl;
+    cout << "The rules are simple. If you can escape this building, you win the Nonary Game. However, if you die," << endl;
+    cout << "you lose.' Everyone looked at each other in confusion." << endl;
+    cout << "Suddenly, the wall began to slide and Zero spoke." << endl;
+    cout << "'Behind this wall are two doors and a box with bracelets. Each player must take a bracelet or else they cannot proceed." << endl;
+    cout << "'Is this some kind of trap?' Xavier said. 'I ain't puttin' that on.'" << endl;
+    cout << "'I daresay, what kind of contraption is this?' said Bryce." << endl;
+    cout << "'Come on, we don't have a choice! We're stuck in this building and there's nothing we can do!' you said." << endl;
+    cout << "Everyone sighed, but they put the bracelets on regardless. As they wrapped their wrists with the bracelets," << endl;
+    cout << "they snapped on tight and they illuminated a number." << endl;
+    cout << "'Hey! This is a trap, god damn it!' yelled Xavier. 'Hey, dumb ass! Yeah, you talking with that deep voice!" << endl;
+    cout << "How the hell do you take these off?!' Xavier pulled vigorously on the bracelet, but it didn't work." << endl;
+    cout << "There was no response from Zero. 'Well, that's just great,' said Xavier as he turned to the corner angrily." << endl;
+    cout << "'Hey, what are these numbers for?' Elayna said." << endl;
+    cout << "Zero started talking again, 'That number is designated to you and you only. It is required in order to open those doors." << endl;
+    cout << "Now, one of you may have picked up a note when you were trapped in your rooms. Please present it to the group." << endl;
+    cout << "Blake presented the note that he found. Everyone was surprised." << endl;
+    cout << "'Good,' said Zero. 'Now, that note contains the instructions that allow you to open the doors. Please read them carefully." << endl;
+    cout << "Blake began to read out loud. 'How to open the doors. With the bracelets that you received, you will use these to open the doors." << endl;
+    cout << "In order to open the door, you will need to find the digital root. The digital root is a number where you take a certain group of people" << endl;
+    cout << "and take their numbers into an equation. You will need to take the sum of that group, then take that sum and add the numbers together." << endl;
+    cout << "From there, you will keep adding until you come down to a single digit. For example, you take three people and their numbers are 5, 7, and 8." << endl;
+    cout << "You must find the sum of those people, so 5 + 7 + 8 = 21. After you find the sum, add the sum's individual numbers, so 2 + 1 = 3." << endl;
+    cout << "With that, you have found the digital root of that particular group. There are several factors that must be taken into account:" << endl;
+    cout << "One, the door will open for nine seconds, then close again." << endl;
+    cout << "Two, there must be at least three people in a group and there must be no more than five in a group." << endl;
+    cout << "Three, the people who enter the door must be the same people who inputted their number for the digital root." << endl;
+    cout << "Four, if there is less people than the group's original number, they cannot proceed." << endl;
+    cout << "FIve, if said group does not have the entire group in tact, they will die.'" << endl;
+    cout << "'Wait, they'll die? But how?' Tim said, as he interrupted Blake." << endl;
+    cout << "There was no response from Zero." << endl;
+    cout << "'I'm perplexed, now.' said Tim as he started thinking." << endl;
+    cout << "'Anyway,' Blake said as he continued." << endl;
+    cout << "'Six, as soon as the group enters the door, their bracelets will trigger a countdown.'" << endl;
+    cout << "Everyone gasped." << endl;
+    cout << "Blake continued, 'This countdown will last for sixty seconds. After the time is up, the persons involved will detonate.'" << endl;
+    cout << "Everyone gulped." << endl;
+    cout << "'Seven, in order to deactivate the countdown, they must find the scanner similar to the one used to enter the door." << endl;
+    cout << "After everyone inputs their numbers, they can deactivate the countdown and proceed.'" << endl;
+    
+    
 }
