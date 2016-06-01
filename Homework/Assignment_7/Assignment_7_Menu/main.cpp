@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Jericho Lingo
  * CSC 5 42829
- * Created on April 25, 2016, 10:00 AM
+ * Created on June 1, 2016, 9:00 PM
  */
 //System Libraries
 #include <iostream>
@@ -13,65 +13,65 @@ using namespace std;
 void menu();
 
 //Problems
-//Savitch_9thEd_Ch6_PracProg5
+//Savitch_9thEd_Ch8_
 void prob1();
 
-//Savitch_9thEd_Ch6_ProgProj2
+//Savitch_9thEd_Ch8_
 void prob2();
 
-//Savitch_9thEd_Ch7_PracProg1
+//Savitch_9thEd_Ch8_
 void prob3();
 
-//Savitch_9thEd_Ch7_PracProg2
+//Savitch_9thEd_Ch8_
 void prob4();
 
-//Savitch_9thEd_Ch7_PracProg3
+//Savitch_9thEd_Ch8_
 void prob5();
 
-//Savitch_9thEd_Ch7_ProgProj3
+//Savitch_9thEd_Ch8_
 void prob6();
 
-//Savitch_9thEd_Ch7_ProgProj5
+//Savitch_9thEd_Ch8_
 void prob7();
 
-//Savitch_9thEd_Ch7_ProgProj10
+//Savitch_9thEd_Ch8_
 void prob8();
 
-//Savitch_9thEd_Ch7_ProgProj11
+//Savitch_9thEd_Ch8_
 void prob9();
 
-//Savitch_9thEd_Ch7_ProgProj16
+//Savitch_9thEd_Ch8_
 void prob10();
 
 //Functions
-//Functions for Practice Program 1
+//Functions for 
 
 
-//Functions for Practice Program 2
+//Functions for 
 
 
-//Functions for Practice Program 3
+//Functions for
 
 
-//Functions for Practice Program 5
+//Functions for
 
 
-//Functions for Practice Program 6
+//Functions for
 
 
-//Functions for Practice Program 7
+//Functions for
 
 
-//Functions for Programming Project 1
+//Functions for
 
 
-//Functions for Programming Project 2
+//Functions for
 
 
-//Functions for Programming Project 4
+//Functions for
 
 
-//Functions for Programming Project 5
+//Functions for
 
 
 //Execution Begins Here!
@@ -120,15 +120,56 @@ int main(int argc, char** argv) {
 //Menu Function
 
 void menu() {
-    cout << "Type 1 to solve Practice Program 1" << endl;
-    cout << "Type 2 to solve Practice Program 2" << endl;
-    cout << "Type 3 to solve Practice Program 3" << endl;
-    cout << "Type 4 to solve Practice Program 5" << endl;
-    cout << "Type 5 to solve Practice Program 6" << endl;
-    cout << "Type 6 to solve Practice Program 7" << endl;
-    cout << "Type 7 to solve Programming Project 1" << endl;
-    cout << "Type 8 to solve Programming Project 2" << endl;
-    cout << "Type 9 to solve Programming Project 4" << endl;
-    cout << "Type 10 to solve Programming Project 5" << endl;
+    cout << "Type 1 to solve " << endl;
+    cout << "Type 2 to solve " << endl;
+    cout << "Type 3 to solve " << endl;
+    cout << "Type 4 to solve " << endl;
+    cout << "Type 5 to solve " << endl;
+    cout << "Type 6 to solve " << endl;
+    cout << "Type 7 to solve " << endl;
+    cout << "Type 8 to solve " << endl;
+    cout << "Type 9 to solve " << endl;
+    cout << "Type 10 to solve " << endl;
     cout << "Type a letter to quit with no solutions." << endl;
 }
+
+void prob1(){
+    
+}
+
+void prob2(){
+    
+}
+
+void prob3(){
+    
+}
+
+void prob4(){
+    
+}
+
+void prob5(){
+    
+}
+
+void prob6(){
+    
+}
+
+void prob7(){
+
+}
+
+void prob8(){
+    
+}
+
+void prob9(){
+    
+}
+
+void prob10(){
+    
+}
+

@@ -20,6 +20,7 @@ void intro();
 void gamecont();
 void name();
 void rules();
+void numb();
 
 //Execution Begins Here!
 
@@ -212,7 +213,65 @@ void rules() {
     cout << "Blake continued, 'This countdown will last for sixty seconds. After the time is up, the persons involved will detonate.'" << endl;
     cout << "Everyone gulped." << endl;
     cout << "'Seven, in order to deactivate the countdown, they must find the scanner similar to the one used to enter the door." << endl;
-    cout << "After everyone inputs their numbers, they can deactivate the countdown and proceed.'" << endl;
+    cout << "After everyone inputs their numbers, they can deactivate the countdown and proceed." << endl;
+    cout << "And that's the end of the note.' said Blake." << endl;
     
+}
+    
+void numb(){
+    
+    cout << setfill('-') << setw(120) << "-" << endl;
+    cout << "'Good.' said Zero. 'Now, you have 30 minutes to decide who should go with whom. Decide carefully." << endl;
+    cout << "The puzzles behind the door will be difficult, so choose your partners wisely.'" << endl;
+    cout << "The static from his voice faded away. The room was filled with deep silence." << endl;
+    cout << "'Okay everyone, before we decide who goes with whom, we need to figure out the numbers on our bracelets.' said Tim." << endl;
+    cout << "'Now, who's number one?' said Elayna." << endl;
+    cout << "Bryce stretched his arm out. 'I am number one.'" << endl;
+    cout << "'Okay, next?'" << endl;
+    cout << "'I'm number two,' said Tim as he showed his bracelet to everyone." << endl;
+    cout << "'Number three, over here.' said Xavier as he lazily showed everyone his bracelet." << endl;
+    cout << "'I'm number four!' said Elayna as she swung her arm in front of everyone." << endl;
+    cout << "'I'm number five.' you said as you showed your bracelet." << endl;
+    cout << "'I'm number six.' said Beatrice, following the same motion as you did." << endl;
+    cout << "'I'm number seven.' said Blake." << endl;
+    cout << "'I'm number eight!' said Jessica as everyone stared." << endl;
+    cout << "'And I'm number nine.' said Rob." << endl;
+    cout << "'All right, so we have everyone's numbers and the doors are marked '4' and '5'.' said Tim." << endl;
+    cout << "'We need to have a group of four in either door and a group five in the other door,' said Elayna." << endl;
+    cout << "You try and calculate the digital root based on certain people. Then Beatrice interrupts you." << endl;
+    cout << "'Hey, " << name << ". You know that we can enter door number 4 if we have Xavier and Jessica join us, right?'" << endl;
+    cout << "'Really?' you said as you calculate the digital root. 3 + 5 + 6 + 8 = 22. 2 + 2 = 4. 'So we can.'" << endl;
+    cout << "'And it works out for the others too!' said Beatrice. 'Look, try finding the digital root for Bryce and the others!'" << endl;
+    cout << "You calculate their digital root. 1 + 2 + 4 + 7 + 9 = 23. 2 + 3 = 5. 'Well then, why don't we go tell them?' you said." << endl;
+    cout << "You approach the group, however you hear Xavier arguing with all of them." << endl;
+    cout << "'I'd rather go with all the ladies. You guys can screw yourselves.' he said nonchalantly as he approaches Jessica." << endl;
+    cout << "'Ey, stay away from me, mate! I barely even know you!'" << endl;
+    cout << "'Now, Xavier,' said Bryce. 'If you certainly wanted to accompany the ladies, you will need my assistance," << endl;
+    cout << "as I complete the missing number for your digital root.'" << endl;
+    cout << "You calculate the digital root of Bryce, Xavier, and all the woman. 1 + 3 + 4 + 6 + 8 = 22. 2 + 2 = 4." << endl;
+    cout << "You calculate the digital root for the remainder of people including yourself. 2 + 5 + 7 + 9 = 23. 2 + 3 = 5. That also works, you thought." << endl;
+    cout << "'Blimey! I wouldn't go with this creep if he was the last person on Earth!' yelled Jessica." << endl;
+    cout << "'That's a pretty strong statement there. You got the ovaries to back that up?' said Xavier with an evil look on his face." << endl;
+    cout << "Elayna steps in, 'I'm sorry, Jessica, but the only way to get through these doors is to have you pair up with Xavier." << endl;
+    cout << "We've calculated the digital roots and there's only two choices:" << endl;
+    cout << "The first option is to have Xavier, " << name << ", Beatrice, and you enter door number 4" << endl;
+    cout << "while Bryce, Tim, me, Blake, and Rob to enter door number 5." << endl;
+    cout << "The second option is to have Bryce, Xavier, me, Beatrice, and you to enter door number 4" << endl;
+    cout << "while Tim, " << name << ", Blake, and Rob enter door number 5." << endl;
+    cout << "After Elayna finishes discussing the options, the loudspeaker goes off again." << endl;
+    cout << "'You only have 5 minutes to decide. If you do not make a choice, you will be penalized.' said Zero." << endl;
+    cout << "Beatrice raises her hand, 'I'm all for the first option.'" << endl;
+    cout << "'Okay then, let's have a vote. Who wants option one?' said Elayna" << endl;
+    cout << "Four people raised their hand: Tim, Elayna, Beatrice, and Blake." << endl;
+    cout << "'Hmm, okay, what about option two?" << endl;
+    cout << "Four people raised their hand: Bryce, Xavier, Jessica, and Rob." << endl;
+    cout << name <<"! You haven't decided which option you wanted to go with?" << endl;
+    cout << "'Umm...' you murmured." << endl;
+    cout << "The loudspeaker goes off 'One minute remaining.'" << endl;
+    cout << "'Come on, " << name << "pick!' yelled Beatrice." << endl;
+    
+    cout << "Quickly! Which option do you choose?" << endl;
+    cout << "Type 1 to go with Option One." << endl;
+    cout << "Type 2 to go with Option Two." << endl;
     
 }
