@@ -3,9 +3,8 @@
  * Author: Jericho Lingo
  * Created on April 29, 2016, 10:00 PM
  * Purpose: 999 Second Installment Version 1
- * This is the bare bones version that will utilize arrays alongside more story.
+ * This is the bare bones version that will introduce more story.
  * The puzzles will also be more complex as well as the choices.
- * It will also utilize the addition of a player.
  */
 
 //System Libraries
@@ -21,6 +20,8 @@ void gamecont();
 void name();
 void rules();
 void numb();
+void route11();
+void route21();
 
 //Execution Begins Here!
 
@@ -138,26 +139,7 @@ void name() {
         cout << "'Beatrice? Oh my god, you're here too? Oh man, this is crazy!' you said." << endl;
         cout << "'Calm down, " << name << ". If we're gonna live in hell, we might as well stick together.' she said." << endl;
         cout << setfill('-') << setw(120) << "-" << endl;
-        cout << "Please type 9 to continue on with the story." << endl;
-
-        for (;;) {
-
-            //
-            cin >> choice1;
-
-            //Code to avoid infinite loop after a character is introduced
-            //Although there is no loop, it's still here just in case.
-            cin.clear();
-            cin.ignore();
-
-            if (choice1 == 9) {
-                rules();
-            } else {
-                cout << endl;
-                cout << "Error! Invalid input. Please type 9 to continue." << endl;
-                cout << endl;
-            }
-        };
+        rules();
     }
 }
 
@@ -215,11 +197,11 @@ void rules() {
     cout << "'Seven, in order to deactivate the countdown, they must find the scanner similar to the one used to enter the door." << endl;
     cout << "After everyone inputs their numbers, they can deactivate the countdown and proceed." << endl;
     cout << "And that's the end of the note.' said Blake." << endl;
-    
+
 }
-    
-void numb(){
-    
+
+void numb() {
+
     cout << setfill('-') << setw(120) << "-" << endl;
     cout << "'Good.' said Zero. 'Now, you have 30 minutes to decide who should go with whom. Decide carefully." << endl;
     cout << "The puzzles behind the door will be difficult, so choose your partners wisely.'" << endl;
@@ -255,8 +237,8 @@ void numb(){
     cout << "Elayna steps in, 'I'm sorry, Jessica, but the only way to get through these doors is to have you pair up with Xavier." << endl;
     cout << "We've calculated the digital roots and there's only two choices:" << endl;
     cout << "The first option is to have Xavier, " << name << ", Beatrice, and you enter door number 4" << endl;
-    cout << "while Bryce, Tim, me, Blake, and Rob to enter door number 5." << endl;
-    cout << "The second option is to have Bryce, Xavier, me, Beatrice, and you to enter door number 4" << endl;
+    cout << "while Bryce, Tim, Blake, Rob, and I enter door number 5." << endl;
+    cout << "The second option is to have Bryce, Xavier, Beatrice, you, and I enter door number 4" << endl;
     cout << "while Tim, " << name << ", Blake, and Rob enter door number 5." << endl;
     cout << "After Elayna finishes discussing the options, the loudspeaker goes off again." << endl;
     cout << "'You only have 5 minutes to decide. If you do not make a choice, you will be penalized.' said Zero." << endl;
@@ -265,13 +247,75 @@ void numb(){
     cout << "Four people raised their hand: Tim, Elayna, Beatrice, and Blake." << endl;
     cout << "'Hmm, okay, what about option two?" << endl;
     cout << "Four people raised their hand: Bryce, Xavier, Jessica, and Rob." << endl;
-    cout << name <<"! You haven't decided which option you wanted to go with?" << endl;
+    cout << name << "! You haven't decided which option you wanted to go with?" << endl;
     cout << "'Umm...' you murmured." << endl;
     cout << "The loudspeaker goes off 'One minute remaining.'" << endl;
-    cout << "'Come on, " << name << "pick!' yelled Beatrice." << endl;
-    
+    cout << "'Come on, " << name << "! Pick!' yelled Beatrice." << endl;
+
     cout << "Quickly! Which option do you choose?" << endl;
     cout << "Type 1 to go with Option One." << endl;
     cout << "Type 2 to go with Option Two." << endl;
-    
+
+}
+
+void route11() {
+
+    cout << "'Option one!' you yelled." << endl;
+    cout << "'All right, everyone. Scan your bracelets with your groups!' ordered Tim." << endl;
+    cout << "Everyone hurried to their respective doors and scanned their bracelets." << endl;
+    cout << "The sound of each bracelet being scanned gave you an uneasy feeling, however you continued to move on." << endl;
+    cout << "Both doors opened simultaneously after the bracelets have been scanned." << endl;
+    cout << "You looked at the other group as they enter their door." << endl;
+    cout << "Elayna looked back at you and gave you an assuring smile. It's like she knew how to handle these situations." << endl;
+    cout << "'Come on, " << name << "! What are you waiting for?' yelled Beatrice." << endl;
+    cout << "'I'm coming!' you yelled back." << endl;
+    cout << "You continue onward through the door." << endl;
+    cout << "Nine seconds have passed and now the door is closed tight." << endl;
+    cout << "You appear to be in some sort of hallway with three other doors." << endl;
+    cout << "Your bracelet begins to beep as if a timer had been triggered." << endl;
+    cout << "'Great, now we gotta find the other scanner.' said Xavier." << endl;
+    cout << "'Blimey! Where is that scanner at?' said Jessica as she panicked." << endl;
+    cout << "'Over there! At that door!' yelled Beatrice." << endl;
+    cout << "She points to the door across the hallway. Next to the door is a scanner identical to the one outside." << endl;
+    cout << "'Quickly! Scan your bracelets!' you yelled." << endl;
+    cout << "You, Beatrice, and Jessica scanned the bracelets. However, Xavier did not scan his." << endl;
+    cout << "'Xavier, scan your bracelet! Please!' you yelled." << endl;
+    cout << "'No way. We're all gonna die here anyway.' Xavier said nonchalantly." << endl;
+    cout << "'Argh! We don't have time for this!' yelled Jessica. She yanked Xavier's arm and pressed it toward the scanner." << endl;
+    cout << "The scanner received Xavier's input and the bracelets stopped beeping." << endl;
+    cout << "You and Beatrice let out a sigh of relief." << endl;
+    cout << "Xavier held his wrist in a pain relieving fashion. 'Hey! What did ya do that for?!' he said." << endl;
+    cout << "'Don't be an asshole and cooperate, will ya? I want to get outta here as soon as bloody possible and I don't want you" << endl;
+    cout << "holdin' us back. Ya got that, wanka?' Jessica said as she scolded Xavier." << endl;
+    cout << "'Tch, whatever.' Xavier said as he faced his back toward us." << endl;
+    cout << "'Okay, so where exactly are we?' said Beatrice as she looked around." << endl;
+    cout << "'It looks like we're in a hallway that leads to other rooms.' you said." << endl;
+    cout << "'What's behind those doors?' said Beatrice." << endl;
+    cout << "You look at the door to the left. It appears to be an ordinary hotel room." << endl;
+    cout << "You look at the door to the right. It looks like the other hotel room, but mirrored." << endl;
+    cout << "'Well, this looks like a hotel. The ergonomics aren't perfectly sound though.' you said." << endl;
+    cout << "'What do you mean?' said Beatrice." << endl;
+    cout << "'Well, take a look at these rooms. It's a tight fit and everything is so close together.' you said as you pointed everything out." << endl;
+    cout << "'They probably built this to a price point, wouldn't ya think?' said Jessica." << endl;
+    cout << "'Yeah, I guess that's true.' you said." << endl;
+    cout << "'Enough about aesthetics, how the hell do we get out of here?' said Xavier as he said so bluntly." << endl;
+    cout << "'Well,' said Beatrice. 'The door that we scanned our bracelets is locked and the door that we just went through is also locked." << endl;
+    cout << "Really, our only way out is through that door over there.' She points to the door with the scanner." << endl;
+    cout << "'But we need a key in order to unlock it. Honestly, Zero never said anything about looking for keys," << endl;
+    cout << "but if this is the game that he wants us to play, then so be it.'" << endl;
+    cout << "'So you're telling me that we have to play a scavenger hunt around this area and progress our way out?' said Xavier with a dissatisfied look on his face." << endl;
+    cout << "'Correct,' said Beatrice." << endl;
+    cout << "'Well, fuck me then.' Xavier said sarcastically." << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+
+
+}
+
+void route21() {
+
 }
